@@ -30,6 +30,8 @@ The goal is to show that transformer-based models understand linguistic nuances 
 | DistilBERT multilingual | 0.883 | 0.804 |
 
 > **Note**: BERT was trained on only 2,000 examples due to Colab GPU constraints. With more data, BERT consistently outperforms TF-IDF — especially on nuanced sentences.
+## Project Structure
+
 ```
  sentiment-analysis-multilingual/
 ├── notebooks/
@@ -92,5 +94,3 @@ python app/app.py
 • [HuggingFace](https://huggingface.co/alioubguindo)
 
 ---
-
-## 📁 Project Structure
