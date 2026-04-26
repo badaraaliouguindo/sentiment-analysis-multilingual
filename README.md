@@ -30,7 +30,8 @@ The goal is to show that transformer-based models understand linguistic nuances 
 | DistilBERT multilingual | 0.883 | 0.804 |
 
 > **Note**: BERT was trained on only 2,000 examples due to Colab GPU constraints. With more data, BERT consistently outperforms TF-IDF — especially on nuanced sentences.
-''' sentiment-analysis-multilingual/
+```
+ sentiment-analysis-multilingual/
 ├── notebooks/
 │   ├── 01_EDA_Sentiment.ipynb        # Exploratory Data Analysis
 │   └── 02_Modeling.ipynb             # TF-IDF baseline + BERT fine-tuning
@@ -38,10 +39,10 @@ The goal is to show that transformer-based models understand linguistic nuances 
 │   └── app.py                        # Gradio web application
 ├── requirements.txt
 └── README.md
-'''
+```
 ---
 
-## 🗂️ Dataset
+##  Dataset
 
 - **English**: [Stanford SST-2](https://huggingface.co/datasets/stanfordnlp/sst2) — 5,000 movie review sentences
 - **French**: [Allociné](https://huggingface.co/datasets/allocine) — 5,000 French movie reviews
@@ -49,7 +50,7 @@ The goal is to show that transformer-based models understand linguistic nuances 
 
 ---
 
-## 🧠 Model
+##  Model
 
 - **Architecture**: `distilbert-base-multilingual-cased`
 - **Fine-tuning**: 3 epochs, batch size 16, learning rate warmup
@@ -58,10 +59,10 @@ The goal is to show that transformer-based models understand linguistic nuances 
 
 ---
 
-## 🚀 Run Locally
+##  Run Locally
 
 ```bash
-git clone https://github.com/alioubguindo/sentiment-analysis-multilingual
+git clone https://github.com/badaraaliouguindo/sentiment-analysis-multilingual
 cd sentiment-analysis-multilingual
 pip install -r requirements.txt
 python app/app.py
@@ -69,7 +70,7 @@ python app/app.py
 
 ---
 
-## 💡 Key Learnings
+##  Key Learnings
 
 - TF-IDF treats text as a bag of words — it cannot understand context or negation
 - BERT reads the full sentence bidirectionally, capturing nuance
@@ -78,13 +79,13 @@ python app/app.py
 
 ---
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 `Python` `HuggingFace Transformers` `PyTorch` `scikit-learn` `Gradio` `Pandas` `Google Colab`
 
 ---
 
-## 👤 Author
+##  Author
 
 **Badara Aliou Guindo** — Master's student in Data Science & AI  
 [GitHub](https://github.com/badaraaliouguindo)
